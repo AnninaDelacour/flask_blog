@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-secondary">I'm an undergratuade in Digital Business & Software Engineering and
+                            want
+                            to learn as much as possible to make an impact on the world! As a
+                            highly motivated and enthusiastic person I want to show my full potential, meet new
+                            like-minded people and learn and grow from my experiences.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-inline">
+                            <li><a href="https://www.linkedin.com/in/annina-ecker/" class="text-info">Follow on
+                                    LinkedIn</a></li>
+                            <li><a href="https://github.com/AnninaDelacour" class="text-info">Follow on Github</a></li>
+                            <li><a href="mailto: annina_ecker@hotmail.com" class="text-info">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <strong>
+                        <h1>Hello! Hire me :) </h1>
+                    </strong>
+                </a>
+                <a class="nav-link text-info text-uppercase" href="/posts">Posts</a>
+                <a class="nav-link text-info text-uppercase" href="/purrrfect">Hello?</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        {% block body %} {% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

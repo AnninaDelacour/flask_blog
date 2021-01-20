@@ -1,0 +1,6 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/static/images/cat.jpg");
+}
